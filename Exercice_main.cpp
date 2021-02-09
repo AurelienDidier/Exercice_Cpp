@@ -36,14 +36,25 @@ int getSomme(vector<int> tab){
 
     //Exercice 2.3
 int rechercheMax(list<int> liste){
-    int max=liste.front();
-    
+    int max= liste.front();
 	for(list<int>::iterator it = liste.begin(); it != liste.end(); it++){
-		if (*it > max){
-		    max= *it;
-		};
+	    if (max< *it){
+	        max= *it;
+	    }
 	}
 	return max;
+}
+
+//Exercice 3.1
+int areDivisible(int x, int y){
+  return x%y ==0 || y%x==0;
+}
+
+//Exercice 3.2
+void swap(int &x, int &y){
+    int c=x;
+    x=y;
+    y=c;
 }
 
 
@@ -73,5 +84,15 @@ int main() {
  int max=rechercheMax(l);
  cout << max << endl;
 
-    
+ //Exercice 3.1
+ int x=5;
+ int y=15;
+ 
+ bool divisible = areDivisible(6,15);
+ cout <<divisible<<endl;
+	
+ //Exercice 3.2
+ swap(x,y);
+ cout << x << endl;
+ cout << y << endl;
 }
