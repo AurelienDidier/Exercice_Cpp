@@ -96,3 +96,47 @@ int main() {
  cout << x << endl;
  cout << y << endl;
 }
+
+/*
+//Header (.h)
+class Rectangle{
+    private:
+        float longueur;
+        float largeur;
+    public:
+        Rectangle(int x, int y);
+        void setLongueur(int nLongueur);
+        void setLargeur(int nLargeur);
+        void getLongueur();
+        void getLargeur();
+
+        float computePerimeter();
+        float computeArea();
+}
+
+//CPP (.cpp)
+Rectangle::Rectangle(int newlongueur, int newlargeur){
+    longueur=newlongueur;
+    largeur=newlargeur;
+}
+float Rectangle::computePerimeter(){
+    return 2*longueur+2*largeurlargeur;
+}
+float Rectangle::computeArea(){
+    return longueur*largeur;
+}
+
+float Rectangle::getLongueur(){
+    return longueur;
+}
+float Rectangle::getLargeur(){
+    return largeur;
+}
+
+void Rectangle::setLongueur(int newlongueur){
+    longueur=newlongueur;
+}
+void Rectangle::setLargeur(int newlargeur){
+    largeur= newlargeur;
+}
+*/
