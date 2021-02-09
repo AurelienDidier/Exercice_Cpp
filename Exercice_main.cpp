@@ -3,11 +3,12 @@
 using namespace std;
 
 
-//Tableau à taille fixe
+//Exercice 1.1
 int isPair(int i){
     return (i%2 == 0);
 }
 
+//Exercice 2.1
 //Tableau à taille fixe
 int getPositive(int tab[], int taille){
     int i;
@@ -21,6 +22,7 @@ int getPositive(int tab[], int taille){
     return result;
 }
 
+//Exercice 2.2
 //Tableau à taille variable (vector)
 int getSomme(vector<int> tab){
     int result=0;
@@ -32,21 +34,44 @@ int getSomme(vector<int> tab){
     return result;
 }
 
-int main() {
+    //Exercice 2.3
+int rechercheMax(list<int> liste){
+    int max=liste.front();
+    
+	for(list<int>::iterator it = liste.begin(); it != liste.end(); it++){
+		if (*it > max){
+		    max= *it;
+		};
+	}
+	return max;
+}
 
+
+int main() {
+    
+    
+ //Exercice 1.1
  bool pair = isPair(6);
 
+ //Exercice 2.1
  cout << pair << endl;
  int tab[5]={1, -1, 6, 5, 2};
  int resultExo1 = getPositive(tab,5);
  cout << resultExo1 << endl;;
 
-
+ //Exercice 2.2
  vector<int> vect;
  vect.push_back(8);
  vect.push_back(4);
  vect.push_back(2);
  vect.push_back(1);
  int result2=getSomme(vect);
- cout << result2 << endl;;
+ cout << result2 << endl;
+    
+ //Exercice 2.3
+ list<int> l = { 7, 5, 16, 8 }; 
+ int max=rechercheMax(l);
+ cout << max << endl;
+
+    
 }
