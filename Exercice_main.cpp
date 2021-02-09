@@ -11,7 +11,6 @@ int isPair(int i){
 //Tableau à taille fixe
 int getPositive(int tab[], int taille){
     int i;
-    i=0;
     int result=0;
     for (i = 0; i < taille; ++i)
     {
@@ -32,9 +31,6 @@ int getSomme(vector<int> tab){
     }
     return result;
 }
-
-//Tableau à taille
-
 
 int main() {
 
